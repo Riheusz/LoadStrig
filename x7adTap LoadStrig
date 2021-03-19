@@ -1,0 +1,116 @@
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local EXPLOIT = Instance.new("ScreenGui")
+local Login = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Submit = Instance.new("TextButton")
+local Username = Instance.new("TextBox")
+local Password = Instance.new("TextBox")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local x7adTap = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+EXPLOIT.Name = "EXPLOIT"
+EXPLOIT.Parent = game.CoreGui
+EXPLOIT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Login.Name = "Login"
+Login.Parent = EXPLOIT
+Login.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Login.Position = UDim2.new(0.914307296, 0, 0.412520081, 0)
+Login.Size = UDim2.new(0, 108, 0, 108)
+
+Frame.Parent = Login
+Frame.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Frame.Size = UDim2.new(0, 108, 0, 26)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Title.Position = UDim2.new(-7.4505806e-09, 0, 2.38418579e-07, 0)
+Title.Size = UDim2.new(0, 108, 0, 26)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "x7adTap Login"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 14.000
+
+Submit.Name = "Submit"
+Submit.Parent = Login
+Submit.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Submit.Position = UDim2.new(0, 0, 0.796296299, 0)
+Submit.Size = UDim2.new(0, 108, 0, 22)
+Submit.Font = Enum.Font.SourceSans
+Submit.Text = "Login"
+Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Submit.TextSize = 14.000
+Submit.MouseButton1Click:connect(function()
+	if Username.Text == "jK#FNR6zTSD>5cFX" and Password.Text == "M{26JguMt%<Rb4(}" then
+		Login.Visible = false
+		Main.Visible = true
+	end
+end)
+
+Username.Name = "Username"
+Username.Parent = Login
+Username.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Username.Position = UDim2.new(0, 0, 0.259259254, 0)
+Username.Size = UDim2.new(0, 108, 0, 31)
+Username.Font = Enum.Font.SourceSans
+Username.Text = ""
+Username.TextColor3 = Color3.fromRGB(0, 0, 0)
+Username.TextSize = 14.000
+
+Password.Name = "Password"
+Password.Parent = Login
+Password.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Password.Position = UDim2.new(0, 0, 0.546296, 0)
+Password.Size = UDim2.new(0, 108, 0, 27)
+Password.Font = Enum.Font.SourceSans
+Password.Text = ""
+Password.TextColor3 = Color3.fromRGB(0, 0, 0)
+Password.TextSize = 14.000
+
+Main.Name = "Main"
+Main.Parent = EXPLOIT
+Main.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Main.Position = UDim2.new(0.906003118, 0, 0.585874736, 0)
+Main.Size = UDim2.new(0, 128, 0, 70)
+Main.Visible = false
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+TextLabel.Size = UDim2.new(0, 128, 0, 20)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Welcome to x7ad tap"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+x7adTap.Name = "x7adTap"
+x7adTap.Parent = Main
+x7adTap.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+x7adTap.Position = UDim2.new(0, 0, 0.657142878, 0)
+x7adTap.Size = UDim2.new(0, 128, 0, 24)
+x7adTap.Font = Enum.Font.SourceSans
+x7adTap.Text = "Load x7adTap"
+x7adTap.TextColor3 = Color3.fromRGB(0, 0, 0)
+x7adTap.TextSize = 14.000
+x7adTap.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Riheusz/Updated-Cheat/main/FullCheat"))()
+end)
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+TextLabel_2.Position = UDim2.new(0, 0, 0.314285725, 0)
+TextLabel_2.Size = UDim2.new(0, 128, 0, 26)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Have fun with x7adTap!"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
